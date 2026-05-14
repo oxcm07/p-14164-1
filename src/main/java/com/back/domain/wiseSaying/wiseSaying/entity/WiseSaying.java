@@ -8,12 +8,12 @@ import lombok.NoArgsConstructor;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
 
-@Entity //데이터베이스 테이블과 매핑되는 객체
+@Entity
 @Getter
-@NoArgsConstructor  //JPA는 데이터베이스에서 데이터를 읽어와 객체를 생성할 때 기본 생성자를 필요
+@NoArgsConstructor
 public class WiseSaying {
-    @Id //Primary Key 지정
-    @GeneratedValue(strategy = IDENTITY)    //AUTO_INCREMENT
+    @Id
+    @GeneratedValue(strategy = IDENTITY)
     private int id;
     private String content;
     private String author;
